@@ -1,0 +1,34 @@
+[
+  {
+    "id": "1",
+    "slug": "oktan-arttirici-nasil-calisir-vuruntu-nasil-onlenir",
+    "title": "Oktan Arttırıcı Nedir? Turbo Motorlarda Vuruntu (Knock) Nasıl Önlenir?",
+    "date": "12 Kasım 2026",
+    "author": "yakitkatkisi.tr",
+    "readTime": "4 dk",
+    "image": "/images/banners/hero-artoil.jpg",
+    "category": "Performans Rehberi",
+    "excerpt": "Yüksek turbo basınçlarında ve sıkıştırmalı motorlarda oktan arttırıcıların avans vuruntusunu önleme mekanizması ve güç artışı.",
+    "content": [
+      "<p class='lead'>Oktan sayısı, bir yakıtın erken tutuşmaya (detonasyon / vuruntu) karşı gösterdiği direncin ölçüsüdür. Turbo ve supercharger aşırı beslemeli araçlarda düşük oktanlı yakıt silindir içinde kontrolsüz patlamalara neden olarak piston kırmaya kadar varan motor hasarlarına yol açar.</p>",
+      "<h2>VP Racing ve Konsantre Oktan Arttırıcıların Rolü</h2>",
+      "<p>VP Racing Octanium ve Jet Booster gibi profesyonel formülasyonlar, benzin oktanını 8 puana kadar artırarak motor beyninin (ECU) avans kısmasını önler. Bu sayede turbo araçlarda tekerleğe aktarılan güç ve tork güvenli biçimde artar.</p>"
+    ]
+  },
+  {
+    "id": "2",
+    "slug": "su-metanol-enjeksiyonu-nedir",
+    "title": "Su ve Metanol Enjeksiyonu Nedir? Emme Sıcaklığı Nasıl Düşürülür?",
+    "date": "13 Kasım 2026",
+    "author": "yakitkatkisi.tr",
+    "readTime": "5 dk",
+    "image": "/images/banners/hero-artoil.jpg",
+    "category": "Motorsport Teknolojisi",
+    "excerpt": "Su ve metanol enjeksiyon sistemlerinin yanma odasını soğutma, hava yoğunluğunu artırma ve karbon temizleme faydaları.",
+    "content": [
+      "<p class='lead'>Su-metanol enjeksiyonu (Jet M-Sauce vb.), turbo şarjlı motorlarda emme havasına 50/50 oranında saf su ve metanol püskürterek hava sıcaklığını 30-40°C oranında düşüren kimyasal bir intercooler görevi görür.</p>",
+      "<h2>Saf Metanolün (M100) Önemi</h2>",
+      "<p>Püskürtülen sıvının mutlaka deiyonize saf su ve %99.9 saf metanolden oluşması gerekir. Kireçli sular enjektör memelerini tıkayabilir. Hazır karışımlı Jet M-Sauce en ideal atomizasyonu sağlar.</p>"
+    ]
+  }
+]

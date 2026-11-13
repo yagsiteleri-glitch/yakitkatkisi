@@ -1,0 +1,43 @@
+{
+  "siteName": "Yakıt Katkısı & Motorsport",
+  "siteTitle": "Yakıt Katkısı & Oktan Arttırıcı Fiyatları | Motorsport Yarış Yakıtları",
+  "metaDescription": "VP Racing, Liqui Moly Cera Tec ve Jet Motorsport oktan arttırıcı, E85 etanol yarış yakıtı, metanol enjeksiyon sıvıları ve performans katkılarında toptan fiyatlar.",
+  "domain": "https://yakitkatkisi.tr",
+  "phone": "+90 506 940 1210",
+  "phoneRaw": "+905069401210",
+  "whatsapp": "905069401210",
+  "whatsappMessage": "[yakitkatkisi.tr] MUSTERI ILETISIM HATTI\n\nMerhaba, yakit katkilari ve yaris yakitlari hakkinda detayli bilgi ve fiyat teklifi almak istiyorum.",
+  "email": "bilgi@yakitkatkisi.tr",
+  "address": "Arap Camii Mh. Bakır Sk. No:6/A Beyoğlu/İSTANBUL",
+  "primaryColor": "#dc2626",
+  "brands": [
+    {
+      "id": "all",
+      "name": "Tüm Markalar"
+    },
+    {
+      "id": "vp-racing",
+      "name": "VP Racing",
+      "badge": "Amerikan Oktan Lideri",
+      "color": "#2563eb"
+    },
+    {
+      "id": "liqui-moly",
+      "name": "Liqui Moly",
+      "badge": "Alman Seramik Koruma",
+      "color": "#dc2626"
+    },
+    {
+      "id": "jet",
+      "name": "Jet Motorsport",
+      "badge": "Yarış Yakıtı & Katkı",
+      "color": "#ea580c"
+    }
+  ],
+  "viscosities": [
+    "Tümü",
+    "Oktan Arttırıcılar",
+    "Etanol & Metanol Yarış Yakıtı",
+    "Motor & Şanzıman Katkıları"
+  ]
+}
