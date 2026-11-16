@@ -29,23 +29,21 @@ const viscosities = Array.from(new Set(brandProducts.map(p => p.viscosity))).sor
 const packageTypes = Array.from(new Set(brandProducts.map(p => p.packageType))).filter(Boolean);
 
 const allBrandsList = [
-  { key: 'artoil', name: 'Artoil', href: '/artoil' },
-  { key: 'castrol', name: 'Castrol', href: '/castrol' },
-  { key: 'mobil', name: 'Mobil', href: '/mobil' },
-  { key: 'petrol-ofisi', name: 'Petrol Ofisi', href: '/petrol-ofisi' },
-  { key: 'shell', name: 'Shell', href: '/shell' }
+  { key: 'vp-racing', name: 'VP Racing', href: '/vp-racing' },
+  { key: 'liqui-moly', name: 'Liqui Moly', href: '/liqui-moly' },
+  { key: 'jet', name: 'JET Motorsport', href: '/jet' }
 ];
 ---
 
 <Layout
-  title={`${brandName} Hidrolik Yağları Fiyatları & Çeşitleri | ${siteConfig.siteName}`}
+  title={`${brandName} ${siteConfig.siteName} Fiyatları & Çeşitleri | ${siteConfig.siteName}`}
   description={metaDesc}
 >
   <!-- CollectionPage & ItemList Schema.org JSON-LD -->
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    "name": `${brandName} Hidrolik Yağları`,
+    "name": `${brandName} ${siteConfig.siteName}`,
     "description": metaDesc,
     "url": `${siteConfig.domain}/${brandKey}`,
     "mainEntity": {
