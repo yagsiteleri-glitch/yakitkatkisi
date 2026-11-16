@@ -67,7 +67,7 @@ const allBrandsList = [
   <Breadcrumb
     items={[
       { label: "Tüm Ürünler", href: "/magaza" },
-      { label: `${brandName} Hidrolik Yağları` }
+      { label: `${brandName} ${siteConfig.siteName}` }
     ]}
   />
 
@@ -228,7 +228,7 @@ const allBrandsList = [
             <h5>Özel Fiyat Teklifi</h5>
             <p>Varil ve toplu teneke alımları için teknik temsilcimizden anında iskonto alın.</p>
             <a
-              href={`https://wa.me/${siteConfig.whatsapp}?text=${encodeURIComponent(`[hidrolikyag.com] TOPTAN FIYAT LISTESI: ${brandName}\n\nMerhaba, ${brandName} hidrolik yaglari toptan fiyat listesi ve stok durumunu ogrenmek istiyorum.`)}`}
+              href={`https://wa.me/${siteConfig.whatsapp}?text=${encodeURIComponent(`[yakitkatkisi.tr] TOPTAN FIYAT LISTESI: ${brandName}\n\nMerhaba, ${brandName} yakıt katkısı ve yarış yakıtı toptan fiyat listesi ve stok durumunu ogrenmek istiyorum.`)}`}
               target="_blank"
               rel="noopener noreferrer"
               class="btn-sidebar-wa"
@@ -319,7 +319,7 @@ const allBrandsList = [
                   <div class="card-actions">
                     <a href={`/urun/${p.id}`} class="btn-card-detail">İncele</a>
                     <a
-                      href={`https://wa.me/${siteConfig.whatsapp}?text=${encodeURIComponent(`[hidrolikyag.com] TEKLIF TALEBI\n\nUrun: ${p.name}\n\nMerhaba, bu urun icin guncel toptan ve perakende fiyat teklifi rica ediyorum.`)}`}
+                      href={`https://wa.me/${siteConfig.whatsapp}?text=${encodeURIComponent(`[yakitkatkisi.tr] TEKLIF TALEBI\n\nUrun: ${p.name}\n\nMerhaba, bu urun icin guncel toptan ve perakende fiyat teklifi rica ediyorum.`)}`}
                       target="_blank"
                       rel="noopener noreferrer"
                       class="btn-card-quote"
