@@ -22,7 +22,7 @@ const lmProducts = products.filter(p => (p.brandSlug || p.brand) === 'liqui-moly
           <a href="#jet" class="banner-hero-link" aria-label="JET Motorsport Yarış Yakıtları Sayfasına Git">
             <div class="banner-hero-bg">
               <img
-                src="/images/banners/hero-artoil.jpg"
+                src="/images/banners/hero-racing.jpg"
                 alt="JET Motorsport Yarış Yakıtları"
                 width="720"
                 height="420"
@@ -84,7 +84,7 @@ const lmProducts = products.filter(p => (p.brandSlug || p.brand) === 'liqui-moly
                 </div>
                 <div class="card-img-col">
                   <img
-                    src="/images/products/vp-racing-2857-oktan-arttirici-946-ml.jpg"
+                    src="/images/products/vp-racing-2857-oktan-arttirici-946-ml.png"
                     alt="VP Racing Madditive Octanium"
                     class="card-prod-img"
                     loading="lazy"
@@ -112,7 +112,7 @@ const lmProducts = products.filter(p => (p.brandSlug || p.brand) === 'liqui-moly
                 </div>
                 <div class="card-img-col">
                   <img
-                    src="/images/products/liqui-moly-ceratec-seramik-bazli-motor-onarici-(7181)-300-ml.jpg"
+                    src="/images/products/liqui-moly-ceratec-seramik-bazli-motor-onarici-7181-300-ml.png"
                     alt="Liqui Moly Cera Tec"
                     class="card-prod-img"
                     loading="lazy"
@@ -212,24 +212,27 @@ const lmProducts = products.filter(p => (p.brandSlug || p.brand) === 'liqui-moly
       <div class="section-title-wrap">
         <div class="section-heading-row">
           <span class="badge badge-amber">Rehberler & Teknik Bilgiler</span>
-          <h2 class="section-heading">Yakıt Katkısı Blog</h2>
+          <h2 class="section-heading">Blog & Teknik Makaleler</h2>
         </div>
         <a href="/blog" class="brand-count-tag brand-count-link">Tüm Yazıları Gör ({blogPosts.length}) →</a>
       </div>
+      <div class="section-divider-line"></div>
 
-      <div class="blog-grid">
-        {blogPosts.slice(0, 3).map(post => (
-          <article class="blog-card">
-            <div class="blog-card-img">
+      <div class="home-blog-grid">
+        {blogPosts.slice(0, 4).map((post) => (
+          <article class="home-blog-card">
+            <a href={`/blog/${post.slug}`} class="home-blog-img">
               <img src={post.image} alt={post.title} loading="lazy" />
-            </div>
-            <div class="blog-card-body">
-              <span class="blog-date">{post.date}</span>
-              <h3 class="blog-card-title">
+            </a>
+            <div class="home-blog-body">
+              <span class="home-blog-cat">{post.category || 'Teknik Rehber'}</span>
+              <h3 class="home-blog-title">
                 <a href={`/blog/${post.slug}`}>{post.title}</a>
               </h3>
-              <p class="blog-card-desc">{post.summary}</p>
-              <a href={`/blog/${post.slug}`} class="blog-read-more">Devamını Oku →</a>
+              <p class="home-blog-excerpt">{post.excerpt || post.summary}</p>
+              <a href={`/blog/${post.slug}`} class="home-blog-link">
+                Yazıyı Oku <i class="fas fa-arrow-right"></i>
+              </a>
             </div>
           </article>
         ))}
@@ -797,7 +800,7 @@ const lmProducts = products.filter(p => (p.brandSlug || p.brand) === 'liqui-moly
   }
   .home-blog-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
   }
   .home-blog-card {
