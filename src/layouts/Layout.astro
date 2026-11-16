@@ -210,62 +210,6 @@ const resolvedOgImage = rawOgImage.startsWith('http') ? rawOgImage : new URL(raw
 
           <li class="nav-item"><a href="/magaza" class="nav-a">Mağaza</a></li>
         </ul>
-          </li>
-
-          <!-- Castrol Menu -->
-          <li class="nav-item has-dropdown">
-            <a href="/liqui-moly" class="nav-a">
-              Liqui Moly <i class="fas fa-chevron-down nav-caret"></i>
-            </a>
-            <ul class="sub-nav-menu">
-              <li class="sub-nav-highlight"><a href="/castrol"><strong>Tüm Castrol Ürünleri ({castrolProducts.length}) →</strong></a></li>
-              {castrolProducts.slice(0, 5).map(p => (
-                <li><a href={`/urun/${p.id}`}>{p.name}</a></li>
-              ))}
-            </ul>
-          </li>
-
-          <!-- Mobil Menu -->
-          <li class="nav-item has-dropdown">
-            <a href="/jet" class="nav-a">
-              Jet Motorsport <i class="fas fa-chevron-down nav-caret"></i>
-            </a>
-            <ul class="sub-nav-menu">
-              <li class="sub-nav-highlight"><a href="/mobil"><strong>Tüm Mobil Ürünleri ({mobilProducts.length}) →</strong></a></li>
-              {mobilProducts.slice(0, 5).map(p => (
-                <li><a href={`/urun/${p.id}`}>{p.name}</a></li>
-              ))}
-            </ul>
-          </li>
-
-          <!-- Petrol Ofisi Menu -->
-          <li class="nav-item has-dropdown">
-            <a href="/petrol-ofisi" class="nav-a">
-              Petrol Ofisi <i class="fas fa-chevron-down nav-caret"></i>
-            </a>
-            <ul class="sub-nav-menu">
-              <li class="sub-nav-highlight"><a href="/petrol-ofisi"><strong>Tüm Petrol Ofisi Ürünleri ({poProducts.length}) →</strong></a></li>
-              {poProducts.slice(0, 5).map(p => (
-                <li><a href={`/urun/${p.id}`}>{p.name}</a></li>
-              ))}
-            </ul>
-          </li>
-
-          <!-- Shell Menu -->
-          <li class="nav-item has-dropdown">
-            <a href="/shell" class="nav-a">
-              Shell <i class="fas fa-chevron-down nav-caret"></i>
-            </a>
-            <ul class="sub-nav-menu">
-              <li class="sub-nav-highlight"><a href="/shell"><strong>Tüm Shell Ürünleri ({shellProducts.length}) →</strong></a></li>
-              {shellProducts.slice(0, 5).map(p => (
-                <li><a href={`/urun/${p.id}`}>{p.name}</a></li>
-              ))}
-            </ul>
-          </li>
-
-          <li class="nav-item"><a href="/magaza" class="nav-a">Mağaza</a></li>
-        </ul>
 
         <div class="nav-links-right">
           <a href="/blog" class="nav-a">Blog</a>
@@ -349,86 +293,52 @@ const resolvedOgImage = rawOgImage.startsWith('http') ? rawOgImage : new URL(raw
           <!-- Brands Section with Accordion -->
           <li class="drawer-section-label">Markalarımız & Ürünler</li>
 
-          <!-- Artoil Accordion -->
+          <!-- VP Racing Accordion -->
           <li class="drawer-accordion-item">
             <button class="drawer-accordion-btn" type="button">
-              <span class="acc-brand-title">Artoil</span>
+              <span class="acc-brand-title">VP Racing</span>
               <div class="acc-right">
-                <span class="acc-count-pill">{artoilProducts.length}</span>
+                <span class="acc-count-pill">{vpProducts.length}</span>
                 <i class="fas fa-chevron-down acc-arrow"></i>
               </div>
             </button>
             <div class="drawer-accordion-panel">
-              <a href="/artoil" class="drawer-sublink highlight">Tüm Artoil Ürünleri ({artoilProducts.length}) →</a>
-              {artoilProducts.slice(0, 5).map(p => (
+              <a href="/vp-racing" class="drawer-sublink highlight">Tüm VP Racing Ürünleri ({vpProducts.length}) →</a>
+              {vpProducts.map(p => (
                 <a href={`/urun/${p.id}`} class="drawer-sublink">{p.name}</a>
               ))}
             </div>
           </li>
 
-          <!-- Castrol Accordion -->
+          <!-- Liqui Moly Accordion -->
           <li class="drawer-accordion-item">
             <button class="drawer-accordion-btn" type="button">
-              <span class="acc-brand-title">Castrol</span>
+              <span class="acc-brand-title">Liqui Moly</span>
               <div class="acc-right">
-                <span class="acc-count-pill">{castrolProducts.length}</span>
+                <span class="acc-count-pill">{lmProducts.length}</span>
                 <i class="fas fa-chevron-down acc-arrow"></i>
               </div>
             </button>
             <div class="drawer-accordion-panel">
-              <a href="/castrol" class="drawer-sublink highlight">Tüm Castrol Ürünleri ({castrolProducts.length}) →</a>
-              {castrolProducts.slice(0, 5).map(p => (
+              <a href="/liqui-moly" class="drawer-sublink highlight">Tüm Liqui Moly Ürünleri ({lmProducts.length}) →</a>
+              {lmProducts.map(p => (
                 <a href={`/urun/${p.id}`} class="drawer-sublink">{p.name}</a>
               ))}
             </div>
           </li>
 
-          <!-- Mobil Accordion -->
+          <!-- JET Motorsport Accordion -->
           <li class="drawer-accordion-item">
             <button class="drawer-accordion-btn" type="button">
-              <span class="acc-brand-title">Mobil</span>
+              <span class="acc-brand-title">JET Motorsport</span>
               <div class="acc-right">
-                <span class="acc-count-pill">{mobilProducts.length}</span>
+                <span class="acc-count-pill">{jetProducts.length}</span>
                 <i class="fas fa-chevron-down acc-arrow"></i>
               </div>
             </button>
             <div class="drawer-accordion-panel">
-              <a href="/mobil" class="drawer-sublink highlight">Tüm Mobil Ürünleri ({mobilProducts.length}) →</a>
-              {mobilProducts.slice(0, 5).map(p => (
-                <a href={`/urun/${p.id}`} class="drawer-sublink">{p.name}</a>
-              ))}
-            </div>
-          </li>
-
-          <!-- Petrol Ofisi Accordion -->
-          <li class="drawer-accordion-item">
-            <button class="drawer-accordion-btn" type="button">
-              <span class="acc-brand-title">Petrol Ofisi</span>
-              <div class="acc-right">
-                <span class="acc-count-pill">{poProducts.length}</span>
-                <i class="fas fa-chevron-down acc-arrow"></i>
-              </div>
-            </button>
-            <div class="drawer-accordion-panel">
-              <a href="/petrol-ofisi" class="drawer-sublink highlight">Tüm Petrol Ofisi Ürünleri ({poProducts.length}) →</a>
-              {poProducts.slice(0, 5).map(p => (
-                <a href={`/urun/${p.id}`} class="drawer-sublink">{p.name}</a>
-              ))}
-            </div>
-          </li>
-
-          <!-- Shell Accordion -->
-          <li class="drawer-accordion-item">
-            <button class="drawer-accordion-btn" type="button">
-              <span class="acc-brand-title">Shell</span>
-              <div class="acc-right">
-                <span class="acc-count-pill">{shellProducts.length}</span>
-                <i class="fas fa-chevron-down acc-arrow"></i>
-              </div>
-            </button>
-            <div class="drawer-accordion-panel">
-              <a href="/shell" class="drawer-sublink highlight">Tüm Shell Ürünleri ({shellProducts.length}) →</a>
-              {shellProducts.slice(0, 5).map(p => (
+              <a href="/jet" class="drawer-sublink highlight">Tüm JET Motorsport Ürünleri ({jetProducts.length}) →</a>
+              {jetProducts.map(p => (
                 <a href={`/urun/${p.id}`} class="drawer-sublink">{p.name}</a>
               ))}
             </div>
@@ -498,11 +408,9 @@ const resolvedOgImage = rawOgImage.startsWith('http') ? rawOgImage : new URL(raw
         <div class="footer-col">
           <h3 class="footer-title">Ürün Kategorileri</h3>
           <ul class="footer-links">
-            <li><a href="/artoil">Artoil Yakıt Katkıları</a></li>
-            <li><a href="/castrol">Castrol Hyspin AWS Serisi</a></li>
-            <li><a href="/mobil">Mobil DTE & Nuto H Serisi</a></li>
-            <li><a href="/petrol-ofisi">Petrol Ofisi Hydro Oil HD</a></li>
-            <li><a href="/shell">Shell Tellus S2 & S3 Serisi</a></li>
+            <li><a href="/vp-racing">VP Racing Yarış Yakıtları & Katkılar</a></li>
+            <li><a href="/liqui-moly">Liqui Moly Performans Katkıları</a></li>
+            <li><a href="/jet">JET Motorsport Katkı ve E85/E98</a></li>
             <li><a href="https://www.yagmarket.com/motorsport" target="_blank" rel="noopener noreferrer" class="footer-external-link">Yakıt Katkısı & Yarış Yakıtı — Yağmarket.com ↗</a></li>
           </ul>
         </div>
